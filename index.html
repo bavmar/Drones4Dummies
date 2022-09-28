@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- base meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- SEO tags -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Raleway&display=swap" rel="stylesheet">
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- favicon -->
+        <link rel="icon" href="favicon.png"> 
+        
+        <!-- title -->
+        <title>Drones4Dummies</title>
+    </head>
+    <body>
+        <!-- Start Navigation -->
+        <nav>
+            <a href="index.html">
+                <span>D4D</span>
+                <img src="images/styles/logo.png" alt="logo website">
+            </a>
+            <div class="mobile-menu" onclick="toggleHamburger()">
+                <div id="hamburger"></div>
+            </div>
+            <ul class="menu-items">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="pages/dronepicker.html">Dronepicker</a></li>
+                <li><a class="submenu" href="#">Inspiratie &#8681;</a>
+                    <ul class="dropdown">
+                        <li><a href="pages/boeken.html">Boeken</a></li>
+                        <li><a href="pages/shots.html">Shots</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/stappenplan.html">Stappenplan</a></li>
+                <li><a class="btn" href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- End Navigation -->
+        <!-- Start Hero -->
+        <header class="hero">
+            <h1>Vlieg je drone veilig!</h1>
+        </header>
+        <!-- End Hero -->
+        <!-- Start Main -->
+        <main>
+            <section id="introduction">
+                <div>
+                    <h2>Voorbereiding</h2>
+                    <p>
+                        Het besturen van een drone kan best moeilijk zijn. 
+                        <strong>Zeker als je drone niet uit zichzelf in de lucht blijft vliegen.</strong> 
+                        Koop je een wat duurdere drone met <abbr title="Global Positioning System">GPS-signaal</abbr>, 
+                        dan is het vliegen van een drone al een stuk eenvoudiger. 
+                        Dit zijn drones die wel in staat zijn om zichzelf in de lucht te houden. Wel of geen <abbr title="Global Positioning System">GPS-signaal</abbr>, 
+                        er is genoeg reden om beter te leren vliegen. Niet alleen wordt het leuker, 
+                        ook is de kans op een crash een stuk kleiner. Kijk eens bij de <a href="pages/dronepicker.html">dronepicker</a> om een keuze te maken!
+                    </p>
+                </div>
+                <div>
+                    <h2>Regelgeving</h2>
+                    <p>
+                        <mark>Zorg dat je de ruimte hebt.</mark> Vlieg niet boven aaneengesloten bebouwing, mensen, wegen en havens. 
+                        Stijg niet op nabij vliegvelden en stel je op de hoogte van gebieden waar een vliegverbod geldt. 
+                        Alle voorwaarden staan bij het <a href="pages/stappenplan.html#regels">stappenplan</a>.
+                    </p>
+                </div>
+            </section>
+            <section id="media">
+                <h2>Drone shots & Beelden</h2>
+                    <img src="images/content/shots/shot1.jpg" alt="Drone shot vanuit de lucht">
+                    <img src="images/content/shots/shot2.jpg" alt="Drone shot vanuit de lucht">
+                    <img src="images/content/shots/shot3.jpg" alt="Drone shot vanuit de lucht">
+                    <video controls >
+                        <source src="media/videoplayback.mp4" type="video/mp4">
+                        Uw browser support geen HTML5 Video.
+                    </video>
+                    <iframe src="https://www.youtube.com/embed/hdAx827JUhY?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>    
+            </section>
+            <section id="cards">
+                <h2>Tips</h2>
+                <div class="grid">
+                    <article class="card">
+                        <img src="images/styles/dronepictogram.png" alt="drone pictogram">
+                        <h3>Ken je drone</h3>
+                        <p>
+                            <span>Leer je drone goed kennen voordat je ermee gaat vliegen. Weet hoe je zorgt voor een goed GPS signaal en houd de weersomstandigheden in de gaten. Veilig vliegen met drones heb je zelf in de hand.</span>
+                        </p>
+                    </article>
+                    <article class="card">
+                        <img src="images/styles/120sign.png" alt="120 km/u bord">
+                        <h3>Maximale hoogte</h3>
+                        <p>
+                            <span>Vlieg niet hoger dan 120 meter en houd de drone gedurende de hele vlucht in het zicht. Laat je drone aan de grond als de zon onder is gegaan.</span>
+                        </p>
+                    </article>
+                    <article class="card">
+                        <img src="images/styles/aeret_airspace.png" alt="Aeret airspace kaart 2021">
+                        <h3>Aeret airspace</h3>
+                        <p>
+                            <span>Je mag je drone niet overal vliegen! lees de en neem eens een kijkje bij de <a href="https://aeret.kaartviewer.nl/index.php?@dpf_basic&mobiel=true#mappage">Aeret Airspace map</a>.</span>
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <!-- End Main -->
+
+        <!-- Start Footer -->
+        <footer>
+            <h3>Drones 4 dummies</h3>
+            <small>&copy; Copyright 2022, Bart van Maarschalkerweerd</small>
+        </footer>
+        <!-- End Footer -->
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>

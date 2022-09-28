@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- base meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- SEO tags -->
+        <meta name="description" content="295D5">
+        <meta name="keywords" content="Eindopdracht">
+        <meta name="author" content="Bart van Maarschalkerweerd">
+
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Raleway&display=swap" rel="stylesheet">
+
+        <!-- google maps -->
+        <script src="../scripts/googleMapsAPI.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCes4Qg7oJzvlzrjJt-DdtGRRdulCc0tdY&callback=initializeMap"></script>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="../styles/style.css">
+
+        <!-- favicon -->
+        <link rel="icon" href="../favicon.png"> 
+
+        <!-- title -->
+        <title>Contact - Drones4Dummies</title>
+    </head>
+    <body>
+        <!-- Start Navigation -->
+        <nav>
+            <a href="../index.html">
+                <span>D4D</span>
+                <img src="../images/styles/logo.png" alt="logo website">
+            </a>
+            <div class="mobile-menu" onclick="toggleHamburger()">
+                <div id="hamburger"></div>
+            </div>
+            <ul class="menu-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="dronepicker.html">Dronepicker</a></li>
+                <li><a class="submenu active" href="#">Inspiratie &#8681;</a>
+                    <ul class="dropdown">
+                        <li><a href="boeken.html" class="active">Boeken</a></li>
+                        <li><a href="shots.html">Shots</a></li>
+                    </ul>
+                </li>
+                <li><a href="stappenplan.html">Stappenplan</a></li>
+                <li><a class="btn" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- End Navigation -->
+        <!-- Start Hero -->
+        <header class="hero" id="map">
+        </header>
+        <!-- End Hero -->
+        <!-- Start Main -->
+        <main>
+            <section id="contact">
+                <div>
+                    <h1>Contact?</h1>
+                    <p>Voor vragen die specifiek gericht zijn aan Drones4Dummies kun je onderstaand contactformulier gebruiken.</p>
+                </div>
+                <div>
+                    <h2>Contactformulier</h2>
+                    <form id="adres" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="get">
+                        <ul>
+                            <li>
+                                <label for="aName">Naam:</label>
+                                <input type="text" id="aName" name="name" required>
+                            </li>
+                            <li>
+                                <label for="aEmailadres">E-mailadres:</label>
+                                <input type="email" id="aEmailadres" name="E-mailadres" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+                            </li>
+                            <li>
+                                <label for="aTelefoonummer">Telefoonummer:</label>
+                                <input type="tel" id="aTelefoonummer" name="telefoonummer" pattern="0\d{9}" maxlength="10">
+                            </li>
+                            <li><label for="aVraag">Vraag:</label>
+                                <textarea id="aVraag" name="vraag"  required></textarea>
+                            </li>
+                        </ul>
+                        <button type="submit">Reserveer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- End Main -->
+
+        <!-- Start Footer -->
+        <footer>
+            <h3>Drones 4 dummies</h3>
+            <small>&copy; Copyright 2022, Bart van Maarschalkerweerd</small>
+        </footer>
+        <!-- End Footer -->
+        <script src="../scripts/hamburger.js"></script>
+    </body>
+</html>
